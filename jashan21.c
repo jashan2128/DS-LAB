@@ -1,21 +1,27 @@
-/*#include <stdio.h>
+#include <stdio.h>
 
 int main() {
-    int a[] = {10, 5, 20, 8, 1};
-    int n = 5, max, second;
+    int a[5] = {10, 5, 20, 8, 1};
+    int largest, second, diff;
 
-    max = second = -9999;
+    largest = a[0];
+    second = a[0];
 
-    for (int i = 0; i < n; i++) {
-        if (a[i] > max) {
-          second = max;
-          max =a[i];
-          }
-          else if(a[i]>>second && a[i] != max); 
-          second = a[i];
-          {
-        
+    for(int i = 1; i < 5; i++) {
+        if(a[i] > largest) {
+            second = largest;
+            largest = a[i];
+        }
+        else if(a[i] > second && a[i] != largest) {
+            second = a[i];
+        }
     }
 
-    printf("Second largest") =%d;
-    
+    diff = largest - second;
+
+    printf("Largest = %d\n", largest);
+    printf("Second largest = %d\n", second);
+    printf("Difference = %d\n", diff);
+
+    return 0;
+}
