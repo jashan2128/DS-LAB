@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int a[5] = {10, 5, 20, 8, 1};
+    int a[7] = {10, 5, 20, 8, 1,21,25};
     int largest, second;
 
     largest = a[0];
     second = a[0];
 
-    for(int i = 1; i < 5; i++) {
+    for(int i = 1; i < 7; i++) {
         if(a[i] > largest) {
             second = largest;
             largest = a[i];
