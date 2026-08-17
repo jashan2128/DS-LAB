@@ -2,7 +2,7 @@
 
 int main() {
     int a[5] = {10, 5, 20, 8, 1};
-    int largest, second, diff;
+    int largest, second;
 
     largest = a[0];
     second = a[0];
@@ -17,11 +17,9 @@ int main() {
         }
     }
 
-    diff = largest - second;
 
     printf("Largest = %d\n", largest);
     printf("Second largest = %d\n", second);
-    printf("Difference = %d\n", diff);
-
+  
     return 0;
 }
